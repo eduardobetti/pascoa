@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Neue", cursive;
+}
+
+body {
+    background: rgb(255, 0, 0, .25);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-block: 5vh;
+    padding-inline: 5vw;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid transparent;
+    width: 40vw;
+}
+
+.img {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px;
+    background: url(../../img/bg-pascoa.svg);
+    border-radius: 100%;
+}
+
+.text {
+    flex-direction: column;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+img {
+    width: 40vw;
+}
+
+h1 {
+    text-wrap: nowrap;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p {
+    line-height: 20px;
+    text-align: justify;
+}
+
+h1, p {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 155);
+}
+
+@media (orientation: portrait) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        text-wrap: wrap;
+    }
+
+    section {
+        width: 100vw;
+    }
+}
